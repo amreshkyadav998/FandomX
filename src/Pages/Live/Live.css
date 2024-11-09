@@ -1,0 +1,157 @@
+/* Adjust card slider container margin */
+.slider-container1 {
+  max-width: 1200px;
+  background-color: #000000;
+  padding-top: 120px;
+  margin: 0 auto; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #000;
+}
+
+.slider-container1 h1 {
+  color: #fff;
+}
+
+.react-card-slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Add some space between cards */
+  transition: all 0.5s ease; /* Smooth sliding of cards */
+  pointer-events: none; /* Ensure cards can be clicked even during movement */
+  flex-wrap: wrap; /* Wrap cards on smaller screens */
+}
+
+.react-card-slider-container .card {
+  background: #8d1212; /* Darker background */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  margin: 0 10px;
+  pointer-events: auto; /* Ensure cards can be clicked */
+  position: relative;
+  width: 300px; /* Set a default width */
+  max-width: 100%; /* Ensure cards take up the full width on small screens */
+}
+
+.react-card-slider-container .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add deeper shadow on hover */
+}
+
+.react-card-slider-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.react-card-slider-container .card:hover img {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.react-card-slider-container .card-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #000; /* White text color for contrast */
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background behind the title */
+}
+
+.react-card-slider-container .card-description {
+  font-size: 1.1rem;
+  color: #000; /* Light color for readability */
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark background behind the description */
+}
+
+.react-card-slider-container .card-description:hover {
+  color: #ffd700; /* Change text color on hover */
+  transition: color 0.3s ease;
+}
+
+/* Optional animation: subtle pulsing animation for the card container */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.react-card-slider-container .card {
+  animation: pulse 3s infinite; /* Apply pulse animation to the cards */
+}
+
+/* Media Queries for Responsive Design */
+
+/* For screens smaller than 900px (tablets) */
+@media (max-width: 900px) {
+  .react-card-slider-container {
+    gap: 15px; /* Reduce space between cards */
+  }
+
+  .react-card-slider-container .card {
+    width: 250px; /* Decrease card width for smaller screens */
+  }
+
+  .react-card-slider-container .card-title {
+    font-size: 1.4rem; /* Adjust font size */
+  }
+
+  .react-card-slider-container .card-description {
+    font-size: 1rem; /* Adjust font size */
+  }
+}
+
+/* For screens smaller than 600px (mobile) */
+@media (max-width: 600px) {
+  .react-card-slider-container {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    gap: 10px;
+  }
+
+  .react-card-slider-container .card {
+    width: 100%; /* Cards will take the full width of the screen */
+    margin: 0 auto; /* Center the cards */
+  }
+
+  .react-card-slider-container .card-title {
+    font-size: 1.2rem; /* Adjust font size for mobile */
+  }
+
+  .react-card-slider-container .card-description {
+    font-size: 0.9rem; /* Adjust font size for mobile */
+  }
+}
+
+/* For very small screens (up to 400px) */
+@media (max-width: 400px) {
+  .react-card-slider-container .card {
+    width: 100%; /* Full width on very small screens */
+  }
+
+  .react-card-slider-container .card-title {
+    font-size: 1.1rem; /* Further adjust font size */
+  }
+
+  .react-card-slider-container .card-description {
+    font-size: 0.8rem; /* Further adjust font size */
+  }
+}
+
+/* Modal styling */
+.fixed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure modal is above everything else */
+}

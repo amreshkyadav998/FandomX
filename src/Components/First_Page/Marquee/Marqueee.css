@@ -1,0 +1,46 @@
+:root {
+    --bg-color: #000000;
+    --second-bg-color: #111111;
+    --text-color: #fff;
+    --main-color: cadetblue;
+  }
+  
+  html {
+    font-size: 66.5%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background: var(--second-bg-color);
+    color: var(--text-color);
+  }
+  
+  section {
+    min-height: 100vh;
+    padding: 10rem 8% 2rem;
+  }
+
+  .Marquee_container{
+    background-color: var(--second-bg-color);
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  .title{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 48px;
+  }
+
+  .clientsImgs{
+    display: flex;
+    margin: 1rem 0;
+  }
+
+  .clientImg{
+    width: 180px;
+    gap: 9px;
+    margin: auto;
+    padding: 0.96rem;
+    object-fit: cover;
+  }

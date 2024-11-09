@@ -1,0 +1,258 @@
+:root {
+    --bg-color: #000000;
+    --second-bg-color: #111111;
+    --text-color: #fff;
+    --main-color: cadetblue;
+}
+
+html {
+    font-size: 66.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 8% 2rem;
+}
+
+.review{
+    background: var(--bg-color);
+}
+.review-box{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.review .heading{
+    margin-bottom: 5rem;
+}
+.review-box img{
+    width: 15rem;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+.review-item{
+    min-height: 450px;
+    max-width: 450px;
+    background: var(--second-bg-color);
+    border: 3px solid rgba(238, 238, 238, 0.3);
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+}
+.review-item:hover{
+    border: 3px solid var(--main-color);
+    transform: translateY(-5px) scale(1.03);
+}
+.review-item h2{
+    font-size: 2.8rem;
+}
+.review-item p{
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+#star{
+    color: gold;
+    font-size: 2rem;
+}
+
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    width: 50px;
+}
+
+
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    .score-card-container {
+      flex-direction: column; /* Stack the boxes on smaller screens */
+    }
+    
+    .team-box {
+      width: 100%; /* Full width for each team box */
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .team-box {
+      padding: 15px; /* Slightly reduce padding */
+    }
+  
+    .team-box h2 {
+      font-size: 1.3rem; /* Slightly smaller font */
+    }
+  }
+  
+  @media (max-width: 720px) {
+    
+  .score-card-container{
+    height: 120px;
+    padding: 10px;
+  }
+    .team-box {
+      padding: 10px; /* Further reduce padding */
+    }
+  
+    .team-box h2 {
+      font-size: 1.2rem; /* Further adjust font size */
+    }
+  
+    .players-list p {
+      font-size: 1rem; /* Smaller font for player names */
+      padding-left: 45px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .score-card-container{
+      height: 150px;
+    }
+    .team-logo {
+      width: 80px; /* Reduce logo size */
+      height: 80px; /* Reduce logo size */
+    }
+  
+    .team-box h2 {
+      font-size: 0.9rem; /* Smaller font size */
+    }
+  
+    .players-list p {
+      font-size: 0.6rem; /* Smaller font for player names */
+      margin: 5px 0; 
+      /* display: inline-block; */
+      display: flex;
+      flex-direction: column;
+      padding-left: 130px;
+    }
+   
+  }
+  
+  @media (max-width: 400px) {
+    .team-box {
+      padding: 5px; /* Minimize padding for mobile */
+    }
+  
+    .team-logo {
+      width: 50px; /* Reduce logo size further */
+      height: 50px; /* Reduce logo size further */
+    }
+  
+    .team-box h2 {
+      font-size: 0.9rem; /* Adjust font size for h2 */
+    }
+  
+    .players-list p {
+      font-size: 0.6rem; /* Smaller font for player names */
+      padding-left: 102px;
+    }
+  }
+  @media (max-width: 320px) {
+    .team-box {
+      padding: 5px; /* Minimize padding for mobile */
+    }
+  
+    .team-logo {
+      width: 50px; /* Reduce logo size further */
+      height: 50px; /* Reduce logo size further */
+    }
+  
+    .team-box h2 {
+      font-size: 0.9rem; /* Adjust font size for h2 */
+    }
+  
+    .players-list p {
+      font-size: 0.6rem; /* Smaller font for player names */
+      padding-left: 80px;
+    }
+  }
+  
+  
+  @media (max-width: 1200px) {
+    .info-img {
+      height: 80vh;
+      object-fit: cover;
+      object-position: center; /* Ensure the image is centered */
+      transform: scale(1); /* Scale down the content within the image */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .info-img {
+      height: 75vh;
+      object-fit: cover;
+      object-position: center; /* Ensure the image is centered */
+      transform: scale(1); /* Scale down the content within the image */
+    }
+  }
+  
+  @media (max-width: 720px) {
+    .info-img {
+      height: 70vh;
+      object-fit: cover;
+      object-position: center; /* Ensure the image is centered */
+      transform: scale(1); /* Scale down the content within the image */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .info-img {
+      height: 60vh;
+      object-fit: cover;
+      object-position: center; /* Ensure the image is centered */
+      transform: scale(1); /* Scale down the content within the image */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .info-img {
+      height: 50vh;
+      object-fit: cover;
+      object-position: center; /* Ensure the image is centered */
+      transform: scale(1); /* Scale down the content within the image */
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .info-img {
+      height: 45vh;
+      object-fit: contain;
+      object-position: center; /* Ensure the image is centered */
+      transform: scale(1); /* Scale down the content within the image */
+      margin-bottom: -34px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .info-img {
+      height: 40vh;
+      object-fit: cover;
+      object-position: center; /* Ensure the image is centered */
+      transform: scale(1); /* Scale down the content within the image */
+    }
+  }

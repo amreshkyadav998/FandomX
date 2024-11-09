@@ -1,0 +1,20 @@
+.sports_tour_container{
+    background-color: #f7fafc !important;
+}
+.text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .title {
+    letter-spacing: 0.08em;
+  }
+  
+  .subtitle {
+    letter-spacing: 0.05em;
+  }
+  
+  .description {
+    letter-spacing: 0.04em;
+    line-height: 1.3;
+  }
+  

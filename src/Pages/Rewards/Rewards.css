@@ -1,0 +1,117 @@
+/* Reward and Token Section */
+.reward-section {
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .reward-section h1 {
+    font-size: 2.5rem;
+    color: black;
+    margin: 20px 0;
+  }
+  
+  .reward-section p {
+    font-size: 1.125rem;
+    color: #666;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  
+  .reward-section .what-you-can-earn {
+    margin-bottom: 20px;
+  }
+  .what-you-can-earn  h2{
+    color: #4a4a4a;
+  }
+  
+  .reward-section .what-you-can-earn ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .reward-section .what-you-can-earn li {
+    font-size: 1rem;
+    color: #4a4a4a;
+    line-height: 1.8;
+  }
+  
+  .reward-section button {
+    background-color: #3498db;
+    color: white;
+    padding: 14px 28px;
+    margin-bottom: 15px;
+    font-size: 1.125rem;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reward-section button:hover {
+    background-color: #2980b9;
+  }
+  
+  .reward-section img {
+    max-width: 100%;
+    height: auto;
+    max-height:80vh;
+    object-fit: contain;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    .reward-section h1 {
+      font-size: 2.2rem;
+    }
+    .reward-section p {
+      font-size: 1.05rem;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .reward-section h1 {
+      font-size: 2rem;
+    }
+    .reward-section p {
+      font-size: 1rem;
+      padding: 0 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .reward-section h1 {
+      font-size: 1.8rem;
+    }
+    .reward-section p {
+      font-size: 0.95rem;
+      padding: 0 15px;
+    }
+    .reward-section .what-you-can-earn ul {
+      padding-left: 10px;
+    }
+    .reward-section button {
+      padding: 12px 24px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .reward-section h1 {
+      font-size: 1.5rem;
+    }
+    .reward-section p {
+      font-size: 0.9rem;
+      padding: 0 10px;
+    }
+    .reward-section button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  

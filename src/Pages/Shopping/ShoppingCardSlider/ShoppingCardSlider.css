@@ -1,0 +1,195 @@
+/* Container */
+.ShoppingCard-Container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+/* Remove text decoration from links */
+a {
+    text-decoration: none;
+}
+
+/* Slider section */
+.p-slider {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Heading */
+.product-slider-heading {
+    font-size: 28px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #313131;
+    text-align: center;
+    margin: 0;
+}
+
+/* Glider container */
+.glider-contain {
+    position: relative;
+    overflow: hidden; /* Prevent overflow */
+    width: 100%;
+    padding: 0; /* Ensure no padding */
+}
+
+/* Glider for products */
+.glider {
+    display: flex;
+    transition: transform 0.3s ease;
+    /* Use flex to arrange products in a row */
+    min-width: calc(300px * 7); /* Adjust based on the number of products */
+}
+
+/* Product box */
+.product-box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    margin: 0 20px; /* Margin on sides */
+    overflow: hidden; /* Prevents container resizing */
+    position: relative;
+}
+
+/* Image container */
+.p-img-container {
+    width: 100%;
+    height: 300px; /* Increased container height */
+    display: flex;
+    position: relative;
+}
+
+/* Front image */
+.p-img-front,
+.p-img-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* For front image */
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+/* Back image */
+.p-img-back {
+    z-index: 2;
+    opacity: 0; /* Start hidden */
+}
+
+/* Hover effect to switch images */
+.p-img-container:hover .p-img-back {
+    opacity: 1; /* Make back image visible */
+}
+
+.p-img-container:hover .p-img-front {
+    opacity: 0; /* Hide front image */
+}
+
+.p-box-text {
+    margin-top: 9px;
+    width: 100%;
+}
+
+.product-category {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-category span {
+    color: #acacac;
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.product-title {
+    color: #333333;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+
+.product-title:hover {
+    color: #111111;
+    opacity: 0.7;
+    transition: all ease 0.3s;
+}
+
+.price-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.price-buy .p-price {
+    font-size: 1.3rem;
+    color: #333333;
+    font-weight: 700;
+}
+
+.price-buy .p-buy-btn {
+    color: #333333;
+    margin: 0 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 6px;
+    background-color: #e63b3b;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+.price-buy .p-buy-btn:hover {
+    transform: scale(1.05); /* Slightly increases the size */
+}
+
+.p-discount {
+    position: absolute;
+    left: 15px;
+    width: 65px;
+    height: 24px;
+    color: #ffffff;
+    background-color: #e63b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    z-index: 100;
+}
+
+/* Navigation buttons */
+.glider-prev,
+.glider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.glider-prev {
+    left: 10px;
+}
+
+.glider-next {
+    right: 10px;
+}
+
+.glider {
+    display: flex;
+    transition: transform 0.3s ease; /* Smooth transition */
+    width: 100%; /* Ensures the glider takes full width */
+}

@@ -1,0 +1,136 @@
+.tour-section {
+    text-align: center; /* Center the heading */
+    margin-top: 60px; /* Space below the heading */
+}
+
+.tour-heading {
+    font-size: 2.5rem; /* Large font size */
+    color: #111827; /* Dark text color */
+    font-weight: 700; /* Bold font */
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Add padding for spacing */
+    border-bottom: 2px solid #f3f4f6; /* Bottom border for emphasis */
+    display: inline-block; /* Center block */
+}
+
+.tour-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 equal columns */
+    gap: 16px; /* Space between cards */
+    padding: 16px; /* Optional: Add some padding to the container */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .tour-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .tour-container {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+}
+
+.tour-card {
+    position: relative; /* Set positioning context for absolute elements */
+    height: 450px; /* Increased height for better spacing */
+    border-radius: 0.5rem; /* Rounded corners */
+    background-color: #f3f4f6; /* Gray background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border: 1px solid transparent; /* Border styling */
+    overflow: hidden; /* Prevent overflow */
+    transition: box-shadow 0.3s; /* Smooth transition for shadow on hover */
+}
+
+.tour-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.tour-image {
+    object-fit: cover;
+    width: 100%;
+    height: 250px; /* Adjusted to fit the new card size */
+    background-color: rgb(239, 205, 255); /* Fallback color if image fails to load */
+    background-size: cover;
+    background-position: center;
+}
+
+.tour-content {
+    padding: 1rem; /* Consistent padding */
+    text-align: left; /* Align all text to the left */
+}
+
+.tour-title {
+    color: #111827; /* Dark text color */
+    font-size: 1.8rem; /* Increased font size */
+    line-height: 1.5; /* Adjusted line height */
+    font-weight: 700; /* Bolder font */
+    margin: 0; /* Remove default margin */
+}
+
+.tour-desc {
+    margin-top: 0.3rem; /* Space between title and description */
+    color: #6B7280; /* Gray text color */
+    font-size: 1.2rem; /* Description font size */
+    line-height: 1.5; /* Description line height */
+}
+
+.tour-date, .tour-price {
+    margin-top: 0.3rem; /* Space between elements */
+    color: #4B5563; /* Darker gray for date and price */
+    font-size: 0.875rem; /* Font size for date and price */
+}
+
+/* Updated tour-action class for positioning */
+.tour-action {
+    position: absolute; /* Position absolutely within the card */
+    bottom: 16px; /* Distance from the bottom */
+    right: 16px; /* Distance from the right */
+    display: inline-flex;
+    color: #ffffff; /* White text color for better contrast */
+    font-size: 0.875rem; /* Font size for button */
+    line-height: 1.25; /* Line height for button text */
+    font-weight: 500; /* Medium weight */
+    align-items: center; /* Center align items */
+    gap: 0.25rem; /* Space between icon and text */
+    background-color: red; /* Button color */
+    padding: 8px 16px; /* Increased padding for better appearance */
+    border-radius: 4px; /* Rounded corners for button */
+    text-decoration: none; /* Remove underline from link */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.tour-action:hover {
+    background-color: darkred; /* Darker red on hover */
+}
+
+.tour-action span {
+    transition: transform 0.3s ease; /* Smooth transition for icon */
+}
+
+.tour-action:hover span {
+    transform: translateX(4px); /* Move icon on hover */
+}
+
+/* Additional responsive styles for text sizes */
+@media (max-width: 1200px) {
+    .tour-title {
+        font-size: 1.6rem; /* Smaller title font size */
+    }
+
+    .tour-desc {
+        font-size: 1.1rem; /* Smaller description font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .tour-title {
+        font-size: 1.4rem; /* Further decrease title font size */
+    }
+
+    .tour-desc {
+        font-size: 1rem; /* Further decrease description font size */
+    }
+}

@@ -1,0 +1,203 @@
+/* General Styles */
+.whole-page {
+  background-color: #343a40;
+  height: 100vh;
+  width: 100%;
+  margin-top: -25px; /* Adjust this value to cover the upper part */
+}
+
+.score-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #343a40;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  margin: 20px auto;
+  height: 120px;
+}
+
+.team-box {
+  width: 70%;
+  padding: 30px;
+  color: #fff;
+}
+
+.left-box {
+  background-color: #111;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.right-box {
+  background-color: #d71d40;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.team-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  gap: 10px;
+}
+
+.team-logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.team-box h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.status {
+  font-weight: 400;
+  color: #bbb;
+}
+
+.players-list {
+  gap: 20px;
+}
+
+.players-list p {
+  font-size: 1.1rem;
+  margin: 5px 166px;
+}
+
+.score-box h1 {
+  font-size: 32px;
+}
+
+/* Image Styles */
+.info-img {
+  height: 130vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .score-card-container {
+    flex-direction: column; /* Stack the boxes on smaller screens */
+  }
+
+  .team-box {
+    width: 100%; /* Full width for each team box */
+    padding: 20px;
+  }
+
+  .info-img {
+    height: 80vh; /* Adjust height for medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .team-box {
+    padding: 15px; /* Slightly reduce padding */
+  }
+
+  .team-box h2 {
+    font-size: 1.3rem; /* Slightly smaller font */
+  }
+
+  .info-img {
+    height: 75vh; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 720px) {
+  .score-card-container {
+    height: 120px;
+    padding: 10px;
+  }
+
+  .team-box {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .team-box h2 {
+    font-size: 1.2rem; /* Further adjust font size */
+  }
+
+  .players-list p {
+    font-size: 1rem; /* Smaller font for player names */
+    padding-left: 45px;
+  }
+
+  .info-img {
+    height: 70vh; /* Adjust height for small screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .score-card-container {
+    height: 150px;
+  }
+
+  .team-logo {
+    width: 80px; /* Reduce logo size */
+    height: 80px; /* Reduce logo size */
+  }
+
+  .team-box h2 {
+    font-size: 0.9rem; /* Smaller font size */
+  }
+
+  .players-list p {
+    font-size: 0.6rem; /* Smaller font for player names */
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 130px;
+  }
+
+  .info-img {
+    height: 50vh; /* Adjust image height for very small screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .team-box {
+    padding: 5px; /* Minimize padding for mobile */
+  }
+
+  .team-logo {
+    width: 50px; /* Reduce logo size further */
+    height: 50px; /* Reduce logo size further */
+  }
+
+  .team-box h2 {
+    font-size: 0.9rem; /* Adjust font size for h2 */
+  }
+
+  .players-list p {
+    font-size: 0.6rem; /* Smaller font for player names */
+    padding-left: 102px;
+  }
+
+  .info-img {
+    height: 45vh; /* Further reduce on very small screens */
+    object-fit: contain; /* Change to contain to avoid overflow */
+    object-position: center; /* Ensure the image is centered */
+    transform: scale(1); /* Scale down the content within the image */
+    margin-bottom: -34px;
+  }
+}
+
+@media (max-width: 360px) {
+  .info-img {
+    height: 40vh;
+    object-fit: cover;
+    object-position: center; /* Ensure the image is centered */
+    transform: scale(1); /* Scale down the content within the image */
+  }
+}
