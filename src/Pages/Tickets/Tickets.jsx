@@ -23,12 +23,13 @@ function Tickets() {
   return (
     <section className="flex flex-col items-center bg-[var(--bg-color)] text-[var(--text-color)]">
       {/* Header Image */}
-      <div className="w-full h-[300px] mb-10">
+      <div className="w-full h-[270px] mb-10">
         <img
-          src="/assets/ticket_banner1.jpg"
+          src="/assets/ticket-banner.png"
           alt="Sports Header"
           className="w-full h-full rounded-lg shadow-lg object-cover"
         />
+        {/* <h1 className="text-6xl color-[cadetblue]">BOOK YOUR TICKET</h1> */}
       </div>
 
       {/* Search Box */}
