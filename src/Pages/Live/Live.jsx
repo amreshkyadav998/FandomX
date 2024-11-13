@@ -17,95 +17,104 @@ const Live = () => {
     {
       image: "/assets/s1.jpg",
       title: "India V/S Australia",
-      description: "Description 1",
+      description: "Exciting cricket match in Australia",
       clickEvent: () => sliderClick({ title: "India V/S Australia" }),
     },
     {
       image: "/assets/s2.jpg",
       title: "Ronaldo V/S Messi",
-      description: "Description 2",
+      description: "Iconic football rivalry showdown game",
       clickEvent: () => sliderClick({ title: "Ronaldo V/S Messi" }),
     },
     {
       image: "/assets/s5.jpg",
       title: "RCB V/S MI",
-      description: "Description 3",
+      description: "Intense IPL cricket team clash",
       clickEvent: () => sliderClick({ title: "RCB V/S MI" }),
     },
     {
       image: "/assets/s3.jpg",
       title: "India V/S England",
-      description: "Description 4",
+      description: "Historic cricket series in England",
       clickEvent: () => sliderClick({ title: "India V/S England" }),
     },
     {
       image: "/assets/s4.jpg",
       title: "India V/S Iran",
-      description: "Description 5",
+      description: "International kabaddi tournament showdown",
       clickEvent: () => sliderClick({ title: "India V/S Iran" }),
     },
     {
       image: "https://picsum.photos/200/300",
       title: "Fifth Title",
-      description: "Description 6",
+      description: "Scenic countryside landscape photo session",
       clickEvent: () => sliderClick({ title: "Fifth Title" }),
     },
     {
       image: "https://picsum.photos/800/700",
       title: "Sixth Title",
-      description: "Description 7",
+      description: "Mountain adventure with clear skies",
       clickEvent: () => sliderClick({ title: "Sixth Title" }),
     },
     {
       image: "https://picsum.photos/300/400",
       title: "Seventh Title",
-      description: "Description 8",
+      description: "Serene beach sunset and waves",
       clickEvent: () => sliderClick({ title: "Seventh Title" }),
     },
   ];
-
+  
   const videoSlides = [
     {
       title: "India V/S Australia (Video)",
-      videoLink: "https://www.youtube.com/embed/AUzzBuQdz_I", // Embed link for video
-      image: "/assets/s1.jpg", // Image for the video
+      videoLink: "https://www.youtube.com/embed/AUzzBuQdz_I",
+      image: "/assets/s1.jpg",
+      description: "Watch India face Australia live",
     },
     {
       title: "Ronaldo V/S Messi (Video)",
-      videoLink: "https://www.youtube.com/embed/aZsicM8i_OI", // Replace with actual link
-      image: "/assets/s2.jpg", // Image for the video
+      videoLink: "https://www.youtube.com/embed/aZsicM8i_OI",
+      image: "/assets/s2.jpg",
+      description: "The epic rivalry in football",
     },
     {
       title: "RCB V/S MI (Video)",
-      videoLink: "https://www.youtube.com/embed/DDenYXhdSOo", // Replace with actual link
-      image: "/assets/s3.jpg", // Image for the video
+      videoLink: "https://www.youtube.com/embed/DDenYXhdSOo",
+      image: "/assets/s3.jpg",
+      description: "Exciting IPL battle between teams",
     },
     {
       title: "India V/S England (Video)",
-      videoLink: "https://www.youtube.com/embed/DDenYXhdSOo", // Replace with actual link
-      image: "/assets/s3.jpg", // Image for the video
+      videoLink: "https://www.youtube.com/embed/DDenYXhdSOo",
+      image: "/assets/s3.jpg",
+      description: "Historic cricket rivalry in England",
     },
     {
       title: "India V/S Iran (Video)",
-      videoLink: "https://www.youtube.com/embed/DDenYXhdSOo", // Replace with actual link
-      image: "/assets/s3.jpg", // Image for the video
+      videoLink: "https://www.youtube.com/embed/DDenYXhdSOo",
+      image: "/assets/s3.jpg",
+      description: "International kabaddi tournament excitement",
     },
     {
       title: "Fifth Title (Video)",
-      videoLink: "https://www.youtube.com/embed/DDenYXhdSOo", // Replace with actual link
-      image: "/assets/s3.jpg", // Image for the video
+      videoLink: "https://www.youtube.com/embed/DDenYXhdSOo",
+      image: "/assets/s3.jpg",
+      description: "Peaceful landscape scenes in nature",
     },
     {
       title: "Sixth Title (Video)",
-      videoLink: "https://www.youtube.com/embed/DDenYXhdSOo", // Replace with actual link
-      image: "/assets/s3.jpg", // Image for the video
+      videoLink: "https://www.youtube.com/embed/DDenYXhdSOo",
+      image: "/assets/s3.jpg",
+      description: "Mountain views with blue sky",
     },
     {
       title: "Seventh Title (Video)",
-      videoLink: "https://www.youtube.com/embed/example8", // Replace with actual link
-      image: "/assets/s3.jpg", // Image for the video
+      videoLink: "https://www.youtube.com/embed/example8",
+      image: "/assets/s3.jpg",
+      description: "Ocean sunset with calming waves",
     },
   ];
+  
 
   return (
     <div className="slider-container1 pl-36 ">

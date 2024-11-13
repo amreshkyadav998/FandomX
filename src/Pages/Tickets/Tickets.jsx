@@ -23,13 +23,13 @@ function Tickets() {
   return (
     <section className="flex flex-col items-center bg-[var(--bg-color)] text-[var(--text-color)]">
       {/* Header Image */}
-      <div className="w-full h-[270px] mb-10">
-        <img
+      <div className="mb-10">
+        {/* <img
           src="/assets/ticket-banner.png"
           alt="Sports Header"
           className="w-full h-full rounded-lg shadow-lg object-cover"
-        />
-        {/* <h1 className="text-6xl color-[cadetblue]">BOOK YOUR TICKET</h1> */}
+        /> */}
+        <h1 className="text-6xl color-[cadetblue]"><span>BOOK</span> YOUR TICKET</h1>
       </div>
 
       {/* Search Box */}
@@ -82,9 +82,9 @@ function Tickets() {
             <div
               key={item.id}
               onClick={() => navigate(`/Tickets/${item.id}`)}
-              className="cursor-pointer bg-[var(--second-bg-color)] p-6 rounded-lg shadow-lg flex items-center justify-center text-center transition-transform transform hover:scale-110 hover:bg-[var(--main-color)] hover:text-[var(--text-color)] hover:border-4 hover:border-cadetblue duration-300 ease-in-out"
+              className=" h-[81px] cursor-pointer bg-[var(--second-bg-color)] p-6 rounded-lg shadow-lg flex items-center justify-center text-center transition-transform transform hover:scale-110 hover:bg-[var(--main-color)] hover:text-[var(--text-color)] hover:border-4 hover:border-cadetblue duration-300 ease-in-out"
             >
-              <p className="font-semibold text-center">{item.sports_name}</p>
+              <p className="font-semibold text-center pt-[30px]">{item.sports_name}</p>
             </div>
           ))}
       </div>
