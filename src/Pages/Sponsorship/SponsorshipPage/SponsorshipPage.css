@@ -1,64 +1,120 @@
 .sponsorshipSection-container {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #E9E8EE;
+  border-radius: 60px;
+  padding: 12px;
+  max-width: 1200px;
+  margin: 18px auto;
+  gap: 20px;
+}
+
+.sponsorshipSection-content {
+  flex: 1;
+  color: #000;
+  padding: 20px;
+}
+
+.sponsorshipSection-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sponsorshipSection-list {
+  list-style-type: disc;
+  padding-left: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.sponsorshipSection-subtext {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.sponsorshipSection-button {
+  padding: 10px 20px;
+  background-color: #fdbf2d;
+  border: none;
+  border-radius: 18px;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sponsorshipSection-image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsorshipSection-image {
+  border-radius: 60px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Adjustments */
+
+/* For tablets (<= 768px) */
+@media (max-width: 768px) {
+  .sponsorshipSection-container {
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    background-color: #E9E8EE; 
-    border-radius: 60px;
-    padding: 12px;
-    max-width: 1200px;
-    margin: 18px auto;
-    gap: 20px; 
+    padding: 16px;
+    gap: 16px;
   }
-  
-  .sponsorshipSection-content {
-    flex: 1;
-    color: #000;
-    padding: 20px;
-  }
-  
+
   .sponsorshipSection-heading {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
   }
-  
+
   .sponsorshipSection-list {
-    list-style-type: disc;
-    padding-left: 40px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.2;
-    margin-bottom: 20px;
+    font-size: 16px;
+    padding-left: 20px;
   }
-  
+
   .sponsorshipSection-subtext {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
+    font-size: 14px;
   }
-  
+
   .sponsorshipSection-button {
-    padding: 10px 20px;
-    background-color: #fdbf2d;
-    border: none;
-    border-radius: 18px;
-    color: #000;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 16px;
   }
-  
-  .sponsorshipSection-image-container {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+/* For mobile phones (<= 480px) */
+@media (max-width: 480px) {
+  .sponsorshipSection-container {
+    padding: 12px;
+    gap: 12px;
   }
-  
-  .sponsorshipSection-image {
-    border-radius: 60px;
-    max-width: 100%;
-    height: auto;
+
+  .sponsorshipSection-heading {
+    font-size: 24px;
   }
-  
+
+  .sponsorshipSection-list {
+    font-size: 14px;
+    padding-left: 16px;
+  }
+
+  .sponsorshipSection-subtext {
+    font-size: 12px;
+  }
+
+  .sponsorshipSection-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}

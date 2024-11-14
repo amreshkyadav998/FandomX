@@ -79,12 +79,12 @@
   .button-text {
     display: flex;
     flex-direction: column;
-    margin-left: 8px;
-    height: 80px;
+    margin-left: 2px;
+    height: 45px;
   }
   
   .button-text span:first-child {
-    font-size: 12px;
+    font-size: 9px;
     font-weight: 600;
   }
   
@@ -98,6 +98,7 @@
   
   .google span:last-child {
     color: #fff;
+    margin-bottom: 10px;
     font-weight: 800;
   }
   

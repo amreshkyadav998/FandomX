@@ -25,7 +25,7 @@ const Footer = () => {
           <p>Fandom Future PTE</p>
           <p>Cecil St, Singapore</p>
           {/* <p>Karnataka , PIN 999474 , India</p> */}
-          <p className="email-id">info@FandomX.live</p>
+          <p className="email-id">venturewhiz@gmail.com </p>
           <p>+91-0123456789</p>
         </div>
         <div className="col">

@@ -1,10 +1,10 @@
-  /* Sponsorship.css */
+/* Sponsorship.css */
 
 .sponsorship-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #178dc4; 
+  background-color: #178dc4;
   border-radius: 60px;
   padding: 12px;
   max-width: 1200px;
@@ -61,6 +61,62 @@
   border-radius: 60px;
   max-width: 100%;
   height: auto;
+}
+
+/* Responsive Adjustments */
+
+/* For tablets (<= 768px) */
+@media (max-width: 768px) {
+  .sponsorship-container {
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .sponsorship-heading {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .sponsorship-list {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+
+  .sponsorship-subtext {
+    font-size: 14px;
+  }
+
+  .sponsorship-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* For mobile phones (<= 480px) */
+@media (max-width: 480px) {
+  .sponsorship-container {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .sponsorship-heading {
+    font-size: 24px;
+  }
+
+  .sponsorship-list {
+    font-size: 14px;
+    padding-left: 16px;
+  }
+
+  .sponsorship-subtext {
+    font-size: 12px;
+  }
+
+  .sponsorship-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
 }
 
 
