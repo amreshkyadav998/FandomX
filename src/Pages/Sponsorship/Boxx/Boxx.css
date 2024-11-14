@@ -1,0 +1,79 @@
+/* BoxxApp.css */
+
+.boxx-app {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxx-card-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.boxx-card {
+    background-color: #f9f9fb;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 10px); /* Two cards per row */
+    margin-bottom: 20px;
+}
+
+.boxx-card-image {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    position: relative;
+}
+
+.boxx-card-category {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: white;
+    color: black;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.boxx-card-content {
+    padding: 20px;
+}
+
+.boxx-card-date {
+    font-size: 14px;
+    color: #7c7c7c;
+    margin-bottom: 8px;
+}
+
+.boxx-card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.boxx-card-link {
+    color: #333;
+    font-size: 14px;
+    border: 2px solid yellow;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: gold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.boxx-card-link span {
+    margin-left: 4px;
+}

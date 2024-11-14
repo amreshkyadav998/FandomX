@@ -1,6 +1,8 @@
 import React from 'react';
 import './Sponsorship.css';
 import SponsorshipPage from './SponsorshipPage/SponsorshipPage';
+import SponsorMarquee from './SponsorMarquee/SponsorMarquee';
+import BrandPage from './BrandPage/BrandPage';
 
 const Sponsorship = () => {
   return (
@@ -25,9 +27,27 @@ const Sponsorship = () => {
           />
         </div>
       </div>
+      {/* marquee */}
+      <SponsorMarquee/>
+    
+    {/* just line */}
+      <div className='bg-[#bebdc1] w-full h-6'></div>
+      {/* upto here */}
+
+          {/* about the fandomX */}
+    <div className="page-container">
+      <div className="info-box">
+        <p>
+          FandomX’s cutting-edge platform empowers sports enthusiasts and fans with an all-in-one solution for booking match tickets, venues, sponsorship opportunities, and exclusive fan experiences. With seamless access across major sports and entertainment, FandomX ensures fans and brands alike can connect and engage at a new level.
+        </p>
+      </div>
+    </div>
+    
       <div className='bg-[#F2F2F5]'>
       <SponsorshipPage/>
       </div>
+      {/* brand page */}
+    <BrandPage/>
     </div>
   );
 };

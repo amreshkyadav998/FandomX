@@ -1,0 +1,167 @@
+/* Base reset and general styles remain the same */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the entire layout */
+.brandPage-container {
+    display: flex;
+    max-width: 1190px;
+    border-radius: 30px;
+    margin: 20px auto;
+    padding: 40px;
+    gap: 20px;
+    background-color: #E9E8EE; /* Light background color */
+    flex-wrap: wrap;
+}
+
+/* Heading styles */
+.page-heading {
+    width: 100%;
+    font-size: 39px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;  /* Add some spacing below the heading */
+}
+
+/* Main section styles */
+.main-section {
+    flex: 2;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 16px 16px 0 0;
+}
+
+.article-content {
+    padding: 20px;
+}
+
+.article-date {
+    font-size: 14px;
+    color: #7c7c7c;
+    margin-bottom: 8px;
+}
+
+.article-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    color: black;
+    font-size: 16px;
+    border: 2px solid #fdbf2d;
+    background-color: #fdbf2d;
+    border-radius: 30px;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+}
+
+.sidebar-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.sidebar-date {
+    font-size: 14px;
+    color: #7c7c7c;
+}
+
+/* Responsive Adjustments */
+
+/* Tablet (<= 768px) */
+@media (max-width: 768px) {
+    .brandPage-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .page-heading {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .main-section {
+        flex: 1;
+    }
+
+    .sidebar {
+        flex: 1;
+    }
+
+    .article-title {
+        font-size: 20px;
+    }
+
+    .learn-more {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+/* Mobile (<= 480px) */
+@media (max-width: 480px) {
+    .brandPage-container {
+        padding: 16px;
+    }
+
+    .page-heading {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .article-title {
+        font-size: 18px;
+    }
+
+    .learn-more {
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    .sidebar-card {
+        padding: 12px;
+    }
+
+    .sidebar-title {
+        font-size: 16px;
+    }
+}

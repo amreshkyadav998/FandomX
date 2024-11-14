@@ -96,8 +96,11 @@
 /* For mobile phones (<= 480px) */
 @media (max-width: 480px) {
   .sponsorship-container {
+    flex-direction: column;
     padding: 12px;
     gap: 12px;
+    align-items: center; /* Center-align items */
+    text-align: center; /* Center text on mobile */
   }
 
   .sponsorship-heading {
@@ -107,6 +110,7 @@
   .sponsorship-list {
     font-size: 14px;
     padding-left: 16px;
+    text-align: left; /* Keeps the list items aligned on the left */
   }
 
   .sponsorship-subtext {
@@ -117,7 +121,71 @@
     font-size: 12px;
     padding: 6px 12px;
   }
+
+  .sponsorship-image-container {
+    margin-top: 10px; /* Adds space between image and text */
+  }
+
+  .sponsorship-image {
+    width: 80%; /* Resizes image on smaller screens */
+  }
 }
+
+/* about the company */
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background-color: #f3f2f6;
+}
+
+.info-box {
+  max-width: 1130px;
+  margin-top: 60px;
+  padding: 30px 40px;
+  background-color: #d4cfec;
+  border-radius: 30px;
+  color: #111;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 1.5;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.info-box p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Responsive for .info-box */
+@media (max-width: 768px) {
+  .info-box {
+    padding: 20px 30px;
+    font-size: 28px;
+  }
+  
+  .info-box p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-box {
+    padding: 15px 20px;
+    font-size: 24px;
+    margin-bottom: 42px;
+  }
+
+  .info-box p {
+    font-size: 18px;
+  }
+}
+
+
 
 
 

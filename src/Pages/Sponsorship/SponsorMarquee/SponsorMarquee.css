@@ -1,0 +1,24 @@
+.sponsor_container {
+    background-color: white;
+    margin-top: 90px;
+    padding: 20px;
+}
+
+.sponsor_title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 48px;
+}
+
+.sponsor_images {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.sponsor_img {
+    width: 180px;
+    gap: 6px;
+    margin: auto;
+    padding:0 2.8rem;
+    object-fit: cover;
+}
