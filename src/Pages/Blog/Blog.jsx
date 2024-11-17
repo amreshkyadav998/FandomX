@@ -68,8 +68,8 @@ const blogPosts = [
 const Blog = () => {
   return (
     <div className="blog-container">
-      <h1 className="blog-heading"><span>Latest</span> Sports Insights</h1>
-      <div className="container">
+      <h1 className="blog-heading text-black"><span>Latest</span> Sports Insights</h1>
+      <div className="container-box">
         {blogPosts.map((post, index) => (
           <div className="card" key={index}>
             <div className="card-header">

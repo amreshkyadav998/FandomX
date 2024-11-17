@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import ReactCardSlider from "react-card-slider-component"; // Ensure this library is installed
-import "./Live.css"; // Make sure the CSS file is linked correctly
+import "./Live.css"; 
 
 const Live = () => {
-  const [modalVideo, setModalVideo] = useState(null); // State for managing the video link
+  const [modalVideo, setModalVideo] = useState(null); 
 
   const closeModal = () => {
-    setModalVideo(null); // Close the modal
+    setModalVideo(null); 
   };
 
   const sliderClick = (slide) => {
@@ -117,7 +117,7 @@ const Live = () => {
   
 
   return (
-    <div className="slider-container1 pl-36 ">
+    <div className="slider-container1 pl-36">
       <h1 className="text-4xl font-bold mb-4"> <span>Watch</span> Live Shows</h1>
       <ReactCardSlider slides={slides} />
       {/* Render the video card slider */}

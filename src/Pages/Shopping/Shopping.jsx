@@ -23,7 +23,7 @@ const leagues = [
 const Shopping = () => {
   return (
     // bg-gray-100
-    <div className="bg-gray-100 p-8 text-black pt-[120px]">  
+    <div className="bg-[#e8f5e9] p-8 text-black pt-[120px]">  
       {/* League Circles Section */}
       <div className="text-center mb-4">
         <h2 className="text-3xl font-semibold text-black">Shop Your Favorite Cloths</h2>
@@ -31,7 +31,7 @@ const Shopping = () => {
       <div className="flex flex-wrap justify-center gap-4 mb-8">
         {leagues.map((league, index) => (
           <div key={index} className="flex flex-col items-center">
-            <div className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center shadow-lg">
+            <div className="w-24 h-24 bg-[#f0faf0] rounded-full flex items-center justify-center shadow-lg">
               <img
                 src={league.logo}
                 alt={league.name}

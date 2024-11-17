@@ -77,3 +77,19 @@
 .boxx-card-link span {
     margin-left: 4px;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .boxx-card {
+        width: 100%; /* One card per row on smaller screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .boxx-card {
+        width: 100%; /* One card per row on very small screens */
+    }
+    .boxx-card-container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}

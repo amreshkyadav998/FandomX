@@ -1,16 +1,16 @@
 /* Adjust card slider container margin */
 .slider-container1 {
-  max-width: 1200px;
-  background-color: #000000;
+  max-width: 1500px;
+  background-color: #e8f5e9;
   padding-top: 120px;
-  margin: 0 auto; 
+  margin: 0 6px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   color: #000;
 }
 
 .slider-container1 h1 {
-  color: #fff;
+  color: black;
 }
 
 .react-card-slider-container {

@@ -33,8 +33,8 @@ const Play = () => {
             <button
               key={tab}
               onClick={() => handleTabClick(tab)}
-              className={`text-black text-lg pb-2 cursor-pointer ${
-                selectedTab === tab ? 'border-b-4 border-red-500' : ''
+              className={`text-black bg-[#eefc2e] text-lg pb-2 cursor-pointer ${
+                selectedTab === tab ? 'border-b-4 border-red-900' : ''
               }`}
             >
               {tab.toUpperCase()}

@@ -24,7 +24,7 @@ import SportDetails from "./Pages/Tickets/SportDetails.jsx";
 import Marqueee from './Components/First_Page/Marquee/Marqueee.jsx';
 import Rewards from './Pages/Rewards/Rewards.jsx';
 import Play from './Pages/Play/Play.jsx';
-import Sponsorship from './Pages/Sponsorship/Sponsorship.jsx'
+import Sponsorship from './Pages/Sponsorship/Sponsorship.jsx'   
 
 
 

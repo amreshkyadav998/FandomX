@@ -112,7 +112,7 @@ const Rewards = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center', padding: '20px', backgroundColor: '#f0f0f0', paddingTop: '120px' }}>
+    <div style={{ textAlign: 'center', padding: '20px', backgroundColor: '#e8f5e9', paddingTop: '120px' }}>
       <h1 style={{ fontSize: '48px', margin: '10px 0', color: 'black' }}>
         REWARD YOUR PASSION<span style={{ color: 'red' }}>.</span>
       </h1>

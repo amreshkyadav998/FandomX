@@ -1,6 +1,13 @@
 .hover\:border-cadetblue:hover {
     border-color: #5f9ea0; /* Cadet blue */
   }
+  /* Background color for boxes */
+  .box_color{
+    background-color: #648969;
+    /* background-color: #5fa068;y */
+    /* background-color: #e8f5e9; */
+
+  }
 
   .cta {
     display: flex;
