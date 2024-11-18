@@ -7,19 +7,25 @@ const Navbar = () => {
     const links = document.querySelectorAll('.navbar-link');
     const checkbox = document.getElementById('chk1');
 
-    links.forEach(link => {
-      link.addEventListener('click', () => {
-        // Uncheck the checkbox when any link is clicked
-        checkbox.checked = false;
+    const handleClick = () => {
+      // Scroll to the top of the page
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth', // Smooth scrolling effect
       });
+
+      // Uncheck the checkbox when any link is clicked
+      checkbox.checked = false;
+    };
+
+    links.forEach(link => {
+      link.addEventListener('click', handleClick);
     });
 
     return () => {
       // Cleanup the event listener
       links.forEach(link => {
-        link.removeEventListener('click', () => {
-          checkbox.checked = false;
-        });
+        link.removeEventListener('click', handleClick);
       });
     };
   }, []);

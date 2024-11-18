@@ -207,8 +207,11 @@ function SportDetails() {
       <h1 className="text-4xl lg:text-6xl font-bold mb-8 text-black text-center mt-5 bg-[cadetblue] rounded-md p-5">
         {sport.sports_name}
       </h1>
-      <ReactCardSlider slides={slides} />
-      <button className="ticket-button">Buy Ticket</button> {/* Button added here */}
+      <ReactCardSlider slides={slides} /> 
+      <br/>
+      <br/>
+      {/* <ReactCardSlider slides={slides} /> */}
+      {/* <button className="ticket-button">Buy Ticket</button> Button added here */}
     </div>
   );
 }
