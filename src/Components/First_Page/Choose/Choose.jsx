@@ -11,7 +11,7 @@ const Choose = () => {
         </div>
 
         <div className="about-content" data-aos="zoom-in-up">
-          <h2 className="heading">Why Choose Us?</h2>
+          <h2 className="heading">Why <span>Choose</span> Us?</h2>
           <p>
             FandomX is a sports platform offering ticket booking, venue
             reservations, sponsorships, and sports merchandise. It streamlines

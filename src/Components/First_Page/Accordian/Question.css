@@ -12,7 +12,12 @@
     font-size: 32px;
 }
 
-
+@media (max-width: 500px){
+    .questions-container h1{
+        font-size: 20px;
+        font-weight: 900;
+    }
+}
 @media (max-width: 420px) {
     .questions-container {
         width: 100%; /* Adjust the width for 400px screens */
