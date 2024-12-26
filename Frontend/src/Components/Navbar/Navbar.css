@@ -1,12 +1,13 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: arial;
+  font-family: Arial, sans-serif;
 }
 
-
-header {
+/* Navbar Container */
+.onlynav-header {
   width: 100%;
   display: flex;
   height: 100px;
@@ -16,115 +17,87 @@ header {
   z-index: 99;
   box-shadow: 0 0 6px #000;
   background: rgba(0, 0, 0, 0.5);
-  /* position: sticky; */
 }
 
-#chk1 {
+#onlynav-chk {
   display: none;
 }
 
-i {
-  color: #fff;
-  cursor: pointer;
+.onlynav-logo {
+  flex: 1;
+  margin-left: 20px;
 }
 
-header .logo {
-  flex: 1;
-  color: #fff;
-  margin-left: 20px;
-  text-transform: uppercase;
-  font-size: 15px;
-  width: 10px;
-}
-header img{
+.onlynav-logo img {
   width: 108px;
 }
 
-header ul {
+.onlynav-links {
   flex: 2;
   display: flex;
   justify-content: center;
   margin-left: 180px;
+  transition: right 0.5s linear;
 }
 
-header ul li {
+.onlynav-links li {
   list-style: none;
   font-size: 12px;
 }
 
-header ul li a {
+.onlynav-link {
   text-decoration: none;
-  color: #fff;
+  color: white;
   font-weight: 600;
   text-transform: uppercase;
   padding: 12px 10px;
 }
 
-header ul li a:hover {
+.onlynav-link:hover {
   border-bottom: 2px solid cadetblue;
 }
 
-header .menu {
+.onlynav-menu {
   font-size: 2.5em;
   display: none;
 }
 
-
-#app{
-  background: linear-gradient(135deg, #0a84ff, #5ac8fa, #007aff, #5856d6);
-}
-#play{
-  background: linear-gradient(135deg, #34a853, #4285f4, #fbbc05, #ea4335);
-
-}
-
-.rotate{
-  transform: rotate(180deg);
-}
-
-
-
-.cadetblue{
-  background-color: cadetblue;
-  color: white
-}
-
+/* Responsive Styles */
 @media (max-width: 1000px) {
-  header ul {
+  .onlynav-links {
     position: fixed;
     top: 100px;
     right: -100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: white;
     height: calc(100vh - 100px);
     width: 50%;
     flex-direction: column;
     align-items: center;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
     transition: right 0.5s linear;
   }
 
-  header ul li {
-    /* Add this rule to target list items */
-    margin: 24px 24px; /* Add vertical spacing */
-  }
-
-  header .menu {
-    display: block;
-    width: 100px;
-    text-align: center;
-  }
-
-  #chk1:checked ~ ul {
+  #onlynav-chk:checked ~ .onlynav-links {
     right: 0;
+  }
+
+  .onlynav-links li {
+    margin: 24px 0;
+  }
+  .onlynav-link{
+    color: #000;
+  }
+
+  .onlynav-menu {
+    display: block;
+    margin-right: 20px;
+    color: #fff;
   }
 }
 
 @media (max-width: 600px) {
-  header .logo {
-    font-size: 10px;
-    margin-left: 8px;
-  }
-  header ul {
+  .onlynav-links {
     width: 100%;
   }
 }
-

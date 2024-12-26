@@ -25,6 +25,8 @@ import Marqueee from './Components/First_Page/Marquee/Marqueee.jsx';
 import Rewards from './Pages/Rewards/Rewards.jsx';
 import Play from './Pages/Play/Play.jsx';
 import Sponsorship from './Pages/Sponsorship/Sponsorship.jsx'   
+import Signup from './Pages/Signup/Signup.jsx';
+import Login from './Pages/Login/Login.jsx';
 
 
 
@@ -176,6 +178,26 @@ const router = createBrowserRouter([
       <>
         <Navbar />
         <Sponsorship/>
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: '/signup',
+    element: (
+      <>
+        <Navbar />
+        <Signup/>
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: '/login',
+    element: (
+      <>
+        <Navbar />
+        <Login/>
         <Footer />
       </>
     ),
