@@ -11,7 +11,7 @@ const corsOptions = {
     origin: function (origin, callback) {
         const allowedOrigins = [
             'https://fandom-x.vercel.app',
-            'http://localhost:5173',
+            // 'http://localhost:5173',
             'https://www.airflash.co',
             'https://fandom-b3db17hma-amresh-yadavs-projects-d15da128.vercel.app'
         ];
