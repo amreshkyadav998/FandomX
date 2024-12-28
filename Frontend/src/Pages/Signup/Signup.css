@@ -163,26 +163,32 @@
   background-color: #0056b3;
 }
 
-
 /* Media Queries */
 @media (max-width: 900px) {
   .signup-container {
     grid-template-columns: 1fr;
   }
-  .signup-section{
+
+  .signup-section {
     padding: 90px 20px;
   }
 
   .signup-form {
     padding: 20px;
   }
+
+  .signup-heading {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 600px) {
   .signup-heading {
     font-size: 1.8rem;
+    padding-left: 60px;
   }
-  .signup-section{
+
+  .signup-section {
     padding: 90px 20px;
   }
 
@@ -191,6 +197,25 @@
   }
 
   .btn-submit {
+    padding: 8px 16px;
+  }
+
+  /* Adjusting Modal for Small Screens */
+  .modal-content {
+    padding: 20px;
+    max-width: 90%; /* Make it smaller on mobile */
+    width: 100%;
+  }
+
+  .modal-content h2 {
+    font-size: 20px;
+  }
+
+  .modal-content p {
+    font-size: 14px;
+  }
+
+  .modal-close-btn {
     padding: 8px 16px;
   }
 }
