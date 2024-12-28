@@ -26,38 +26,35 @@ const Signup = () => {
     console.log(user);
 
     try {
-      // const response = await fetch(`http://localhost:3000/api/auth/signup`, {
-      const response = await fetch(`https://fandomxback.onrender.com/api/auth/signup`, {
-        mode: 'no-cors',
-        method: "POST",
-        headers: {
-          'Content-Type': "application/json",
-        },
-        credentials: "include",
-        body: JSON.stringify(user),
-      });
+        const response = await fetch(`https://fandomxback.onrender.com/api/auth/signup`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            credentials: "include", // Ensures cookies are sent/received
+            body: JSON.stringify(user),
+        });
 
-      const data = await response.json();
-      console.log(data);
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
 
-      if (response.ok) {
+        const data = await response.json();
+        console.log(data);
+
         setShowModal(true); // Show the modal if registration is successful
-      } else {
-        console.log("Registration failed");
-      }
 
     } catch (error) {
-      console.log("Registration error:", error);
+        console.error("Registration error:", error);
     }
 
-    // Reset form fields after submission
     setUser({
-      username: "",
-      email: "",
-      phone: "",
-      password: "",
+        username: "",
+        email: "",
+        phone: "",
+        password: "",
     });
-  };
+};
 
   return (
     <section className="signup-section">

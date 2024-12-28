@@ -9,10 +9,16 @@ dotenv.config();
 // let's tackle cors
 const corsOptions = {
     origin: function (origin, callback) {
-        const allowedOrigins = ['http://localhost:5173', 'https://www.airflash.co' , 'https://fandom-x.vercel.app'];
+        const allowedOrigins = [
+            'http://localhost:5173',
+            'https://www.airflash.co',
+            'https://fandom-x.vercel.app',
+            'https://fandom-b3db17hma-amresh-yadavs-projects-d15da128.vercel.app'
+        ];
         if (!origin || allowedOrigins.includes(origin)) {
             callback(null, true);
         } else {
+            console.log(`Blocked by CORS: ${origin}`);
             callback(new Error('Not allowed by CORS'));
         }
     },
@@ -20,7 +26,28 @@ const corsOptions = {
     credentials: true,
 };
 
+// Apply CORS middleware globally
+app.use(cors(corsOptions));
+
+// Explicitly handle preflight requests
 app.options('*', cors(corsOptions));
+app.options('*', (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', req.headers.origin || '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,PATCH,HEAD');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    res.setHeader('Access-Control-Allow-Credentials', 'true');
+    res.sendStatus(204);
+});
+
+
+// Debug middleware to log incoming requests
+app.use((req, res, next) => {
+    console.log(`Request Origin: ${req.headers.origin}`);
+    console.log(`Request Method: ${req.method}`);
+    next();
+});
+
+
 app.use(express.json());
 // Another way to connect mongoDb
 (async () => {
