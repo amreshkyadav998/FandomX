@@ -27,6 +27,7 @@ const Login = () => {
     try {
       // const response = await fetch(`http://localhost:3000/api/auth/login`, {
       const response = await fetch(`https://fandomxback.onrender.com/api/auth/login`, {
+        mode: 'no-cors',
         method: "POST",
         headers: {
           'Content-Type': "application/json",
