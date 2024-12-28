@@ -76,6 +76,7 @@
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.2);
     transition: right 0.5s linear;
+    overflow-y: auto; /* Allows scrolling when content overflows */
   }
 
   #onlynav-chk:checked ~ .onlynav-links {
@@ -85,7 +86,8 @@
   .onlynav-links li {
     margin: 24px 0;
   }
-  .onlynav-link{
+
+  .onlynav-link {
     color: #000;
   }
 
@@ -99,5 +101,26 @@
 @media (max-width: 600px) {
   .onlynav-links {
     width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .onlynav-logo img {
+    width: 80px; /* Adjust logo size for very small screens */
+  }
+
+  .onlynav-links {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .onlynav-link {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .onlynav-menu {
+    font-size: 2em;
+    margin-right: 15px;
   }
 }
