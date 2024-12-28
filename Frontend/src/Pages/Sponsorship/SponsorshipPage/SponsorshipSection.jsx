@@ -1,5 +1,5 @@
 import React from 'react';
-import './Sponsorshippage.css';
+import './SponsorshipPage.css';
 
 const SponsorshipSection = ({ title, content, image, alignment }) => {
   return (
