@@ -8,9 +8,16 @@ dotenv.config();
 
 // let's tackle cors
 const corsOptions = {
-    origin:"http://localhost:5173",
-    methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
-    credentials:true,
+    origin: function (origin, callback) {
+        const allowedOrigins = ['http://localhost:5173', 'https://www.airflash.co'];
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    methods: "GET,POST,PUT,DELETE,PATCH,HEAD",
+    credentials: true,
 };
 
 app.use(cors(corsOptions));
