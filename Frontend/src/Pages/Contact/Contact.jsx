@@ -1,7 +1,7 @@
 import { div } from "framer-motion/client";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import './contact.css'; // Import the CSS file
+import './Contact.css'; // Import the CSS file
 
 const Contact = () => {
   const form = useRef();
