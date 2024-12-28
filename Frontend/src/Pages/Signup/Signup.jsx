@@ -26,7 +26,7 @@ const Signup = () => {
     console.log(user);
 
     try {
-        const response = await fetch(`https://fandomxback.onrender.com/api/auth/signup`, {
+        const response = await fetch(`https://fandomxbackendd.onrender.com/api/auth/signup`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
