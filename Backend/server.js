@@ -9,7 +9,7 @@ dotenv.config();
 // let's tackle cors
 const corsOptions = {
     origin: function (origin, callback) {
-        const allowedOrigins = ['http://localhost:5173', 'https://www.airflash.co'];
+        const allowedOrigins = ['http://localhost:5173', 'https://www.airflash.co' , 'https://fandom-x.vercel.app'];
         if (!origin || allowedOrigins.includes(origin)) {
             callback(null, true);
         } else {
@@ -20,7 +20,7 @@ const corsOptions = {
     credentials: true,
 };
 
-app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
 app.use(express.json());
 // Another way to connect mongoDb
 (async () => {
